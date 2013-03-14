@@ -22,6 +22,8 @@
 		E804D28216F1C95E0045C2BF /* NSArray+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D27F16F1C95E0045C2BF /* NSArray+D2Helper.m */; };
 		E804D28316F1C95E0045C2BF /* NSDate+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D28116F1C95E0045C2BF /* NSDate+D2Helper.m */; };
 		E804D28B16F1CA6F0045C2BF /* D2Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D28A16F1CA6F0045C2BF /* D2Util.m */; };
+		E804D28F16F1D27C0045C2BF /* Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = E804D28E16F1D27C0045C2BF /* Icon_57.png */; };
+		E804D29116F1D2810045C2BF /* Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = E804D29016F1D2810045C2BF /* Icon_114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		E804D28816F1CA420045C2BF /* D2Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D2Base.h; sourceTree = "<group>"; };
 		E804D28916F1CA6F0045C2BF /* D2Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D2Util.h; sourceTree = "<group>"; };
 		E804D28A16F1CA6F0045C2BF /* D2Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D2Util.m; sourceTree = "<group>"; };
+		E804D28E16F1D27C0045C2BF /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_57.png; path = ../Icon_57.png; sourceTree = "<group>"; };
+		E804D29016F1D2810045C2BF /* Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_114.png; path = ../Icon_114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				E804CFF816F166770045C2BF /* InfoPlist.strings */,
 				E804CFFB16F166770045C2BF /* main.m */,
 				E804CFFD16F166770045C2BF /* D2UtilsDemo-Prefix.pch */,
+				E804D29016F1D2810045C2BF /* Icon_114.png */,
+				E804D28E16F1D27C0045C2BF /* Icon_57.png */,
 				E804D00116F166770045C2BF /* Default.png */,
 				E804D00316F166780045C2BF /* Default@2x.png */,
 				E804D00516F166780045C2BF /* Default-568h@2x.png */,
@@ -213,6 +219,8 @@
 				E804D00416F166780045C2BF /* Default@2x.png in Resources */,
 				E804D00616F166780045C2BF /* Default-568h@2x.png in Resources */,
 				E804D01F16F17CA50045C2BF /* InfoPlistEx.strings in Resources */,
+				E804D28F16F1D27C0045C2BF /* Icon_57.png in Resources */,
+				E804D29116F1D2810045C2BF /* Icon_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
