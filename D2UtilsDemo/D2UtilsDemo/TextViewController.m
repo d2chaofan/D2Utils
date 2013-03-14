@@ -13,26 +13,26 @@
 @end
 
 @implementation TextViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+@synthesize text;
+- (id)init {
+    self = [super init];
+    if ( self != nil ) {
+        _textView = [[UITextView alloc] initWithFrame:CGRectZero];
     }
     return self;
 }
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self.view addSubview:_textView];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    _textView.frame = self.view.bounds;
 }
-
+- (void)setText:(NSString *)txt {
+    _textView.text = txt;
+}
+- (NSString *)text {
+    return _textView.text;
+}
 @end

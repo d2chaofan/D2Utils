@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  D2UtilsDemo
 //
-//  Created by yunlian on 13-3-14.
-//  Copyright (c) 2013年 d2chaofan. All rights reserved.
+//  Created by Deng Chaofan on 13-3-14.
+//  Copyright (c) 2013年 Deng Chaofan. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithStyle:UITableViewStylePlain]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

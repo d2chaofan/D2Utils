@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface ViewController : UITableViewController {
+    NSArray *_titles;
+}
 
 @end

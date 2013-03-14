@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TextViewController : UIViewController
-
+@interface TextViewController : UIViewController {
+    UITextView *_textView;
+}
+@property (nonatomic, strong) NSString *text;
 @end

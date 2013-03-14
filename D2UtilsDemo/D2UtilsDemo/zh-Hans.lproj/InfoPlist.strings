@@ -1,2 +1,5 @@
 /* Localized versions of Info.plist keys */
 
+CFBundleDisplayName = "工具演示";
+
+"Hello" = "你好";

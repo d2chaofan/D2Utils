@@ -16,6 +16,11 @@
 		E804D00216F166780045C2BF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E804D00116F166770045C2BF /* Default.png */; };
 		E804D00416F166780045C2BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E804D00316F166780045C2BF /* Default@2x.png */; };
 		E804D00616F166780045C2BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E804D00516F166780045C2BF /* Default-568h@2x.png */; };
+		E804D01916F16D9F0045C2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D01816F16D9F0045C2BF /* ViewController.m */; };
+		E804D01F16F17CA50045C2BF /* InfoPlistEx.strings in Resources */ = {isa = PBXBuildFile; fileRef = E804D02116F17CA50045C2BF /* InfoPlistEx.strings */; };
+		E804D02E16F190650045C2BF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D02D16F190650045C2BF /* TextViewController.m */; };
+		E804D03716F1A7930045C2BF /* NSArray+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */; };
+		E804D03816F1A7930045C2BF /* NSDate+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,18 @@
 		E804D00116F166770045C2BF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E804D00316F166780045C2BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E804D00516F166780045C2BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E804D01716F16D9F0045C2BF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E804D01816F16D9F0045C2BF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E804D01C16F17C2F0045C2BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E804D02016F17CA50045C2BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlistEx.strings; sourceTree = "<group>"; };
+		E804D02216F17CC20045C2BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlistEx.strings"; sourceTree = "<group>"; };
+		E804D02C16F190650045C2BF /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		E804D02D16F190650045C2BF /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		E804D03116F1A7930045C2BF /* D2Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D2Base.h; sourceTree = "<group>"; };
+		E804D03316F1A7930045C2BF /* NSArray+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+D2Helper.h"; sourceTree = "<group>"; };
+		E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+D2Helper.m"; sourceTree = "<group>"; };
+		E804D03516F1A7930045C2BF /* NSDate+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+D2Helper.h"; sourceTree = "<group>"; };
+		E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+D2Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 		E804CFE316F166770045C2BF = {
 			isa = PBXGroup;
 			children = (
+				E804D02F16F1A7930045C2BF /* D2Utils */,
 				E804CFF516F166770045C2BF /* D2UtilsDemo */,
 				E804CFEE16F166770045C2BF /* Frameworks */,
 				E804CFED16F166770045C2BF /* Products */,
@@ -78,6 +96,10 @@
 		E804CFF516F166770045C2BF /* D2UtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E804D02C16F190650045C2BF /* TextViewController.h */,
+				E804D02D16F190650045C2BF /* TextViewController.m */,
+				E804D01716F16D9F0045C2BF /* ViewController.h */,
+				E804D01816F16D9F0045C2BF /* ViewController.m */,
 				E804CFFE16F166770045C2BF /* AppDelegate.h */,
 				E804CFFF16F166770045C2BF /* AppDelegate.m */,
 				E804CFF616F166770045C2BF /* Supporting Files */,
@@ -95,8 +117,38 @@
 				E804D00116F166770045C2BF /* Default.png */,
 				E804D00316F166780045C2BF /* Default@2x.png */,
 				E804D00516F166780045C2BF /* Default-568h@2x.png */,
+				E804D02116F17CA50045C2BF /* InfoPlistEx.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E804D02F16F1A7930045C2BF /* D2Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E804D03016F1A7930045C2BF /* D2Base */,
+				E804D03216F1A7930045C2BF /* D2Helper */,
+			);
+			name = D2Utils;
+			path = ../D2Utils;
+			sourceTree = "<group>";
+		};
+		E804D03016F1A7930045C2BF /* D2Base */ = {
+			isa = PBXGroup;
+			children = (
+				E804D03116F1A7930045C2BF /* D2Base.h */,
+			);
+			path = D2Base;
+			sourceTree = "<group>";
+		};
+		E804D03216F1A7930045C2BF /* D2Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E804D03316F1A7930045C2BF /* NSArray+D2Helper.h */,
+				E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */,
+				E804D03516F1A7930045C2BF /* NSDate+D2Helper.h */,
+				E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */,
+			);
+			path = D2Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +186,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = E804CFE316F166770045C2BF;
 			productRefGroup = E804CFED16F166770045C2BF /* Products */;
@@ -154,6 +207,7 @@
 				E804D00216F166780045C2BF /* Default.png in Resources */,
 				E804D00416F166780045C2BF /* Default@2x.png in Resources */,
 				E804D00616F166780045C2BF /* Default-568h@2x.png in Resources */,
+				E804D01F16F17CA50045C2BF /* InfoPlistEx.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +220,10 @@
 			files = (
 				E804CFFC16F166770045C2BF /* main.m in Sources */,
 				E804D00016F166770045C2BF /* AppDelegate.m in Sources */,
+				E804D01916F16D9F0045C2BF /* ViewController.m in Sources */,
+				E804D02E16F190650045C2BF /* TextViewController.m in Sources */,
+				E804D03716F1A7930045C2BF /* NSArray+D2Helper.m in Sources */,
+				E804D03816F1A7930045C2BF /* NSDate+D2Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +234,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				E804CFF916F166770045C2BF /* en */,
+				E804D01C16F17C2F0045C2BF /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E804D02116F17CA50045C2BF /* InfoPlistEx.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E804D02016F17CA50045C2BF /* en */,
+				E804D02216F17CC20045C2BF /* zh-Hans */,
+			);
+			name = InfoPlistEx.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -208,7 +276,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -232,7 +300,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -280,6 +348,7 @@
 				E804D00B16F166780045C2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
