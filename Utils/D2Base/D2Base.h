@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2013年 Deng Chaofan. All rights reserved.
+ Copyright (c) 2013 Deng Chaofan. All rights reserved.
  
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
@@ -23,11 +23,11 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef D2UtilsDemo_D2Base_h
-#define D2UtilsDemo_D2Base_h
+#ifndef D2Base_h
+#define D2Base_h
 
 
-// for nslog 
+// for nslog
 #ifdef DEBUG
 //#define NSLog(...) NSLog(__VA_ARGS__)
 #define NSLog(fmt, ...) NSLog((@"%s [Line %d] : " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
@@ -36,8 +36,9 @@
 #endif
 
 // for localized string
-#define D2LStr(key) [[NSBundle mainBundle] localizedStringForKey:(key) value:key table:@"InfoPlist"]
-#define D2LStrEx(key, file) [[NSBundle mainBundle] localizedStringForKey:(key) value:key table:file]
+#define D2LStr(key) [[NSBundle mainBundle] localizedStringForKey:(key) value:key table:@"InfoPlist"]    // localize from default file
+#define D2LStrEx(key, file) [[NSBundle mainBundle] localizedStringForKey:(key) value:key table:file]    // localize from file
+#define D2CLStr [[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0]// current language
 
 // for iPhone5
 #define isIPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)

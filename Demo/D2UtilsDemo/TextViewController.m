@@ -2,8 +2,8 @@
 //  TextViewController.m
 //  D2UtilsDemo
 //
-//  Created by yunlian on 13-3-14.
-//  Copyright (c) 2013年 d2chaofan. All rights reserved.
+//  Created by Deng Chaofan on 13-3-14.
+//  Copyright (c) 2013 Deng Chaofan. All rights reserved.
 //
 
 #import "TextViewController.h"
@@ -23,6 +23,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _textView.editable = NO;
     [self.view addSubview:_textView];
 }
 - (void)viewWillAppear:(BOOL)animated {

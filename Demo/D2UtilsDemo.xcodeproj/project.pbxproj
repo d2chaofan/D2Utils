@@ -19,8 +19,9 @@
 		E804D01916F16D9F0045C2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D01816F16D9F0045C2BF /* ViewController.m */; };
 		E804D01F16F17CA50045C2BF /* InfoPlistEx.strings in Resources */ = {isa = PBXBuildFile; fileRef = E804D02116F17CA50045C2BF /* InfoPlistEx.strings */; };
 		E804D02E16F190650045C2BF /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D02D16F190650045C2BF /* TextViewController.m */; };
-		E804D03716F1A7930045C2BF /* NSArray+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */; };
-		E804D03816F1A7930045C2BF /* NSDate+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */; };
+		E804D28216F1C95E0045C2BF /* NSArray+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D27F16F1C95E0045C2BF /* NSArray+D2Helper.m */; };
+		E804D28316F1C95E0045C2BF /* NSDate+D2Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D28116F1C95E0045C2BF /* NSDate+D2Helper.m */; };
+		E804D28B16F1CA6F0045C2BF /* D2Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E804D28A16F1CA6F0045C2BF /* D2Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,11 +45,13 @@
 		E804D02216F17CC20045C2BF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlistEx.strings"; sourceTree = "<group>"; };
 		E804D02C16F190650045C2BF /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		E804D02D16F190650045C2BF /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
-		E804D03116F1A7930045C2BF /* D2Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D2Base.h; sourceTree = "<group>"; };
-		E804D03316F1A7930045C2BF /* NSArray+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+D2Helper.h"; sourceTree = "<group>"; };
-		E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+D2Helper.m"; sourceTree = "<group>"; };
-		E804D03516F1A7930045C2BF /* NSDate+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+D2Helper.h"; sourceTree = "<group>"; };
-		E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+D2Helper.m"; sourceTree = "<group>"; };
+		E804D27E16F1C95E0045C2BF /* NSArray+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+D2Helper.h"; sourceTree = "<group>"; };
+		E804D27F16F1C95E0045C2BF /* NSArray+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+D2Helper.m"; sourceTree = "<group>"; };
+		E804D28016F1C95E0045C2BF /* NSDate+D2Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+D2Helper.h"; sourceTree = "<group>"; };
+		E804D28116F1C95E0045C2BF /* NSDate+D2Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+D2Helper.m"; sourceTree = "<group>"; };
+		E804D28816F1CA420045C2BF /* D2Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D2Base.h; sourceTree = "<group>"; };
+		E804D28916F1CA6F0045C2BF /* D2Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D2Util.h; sourceTree = "<group>"; };
+		E804D28A16F1CA6F0045C2BF /* D2Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D2Util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +71,7 @@
 		E804CFE316F166770045C2BF = {
 			isa = PBXGroup;
 			children = (
-				E804D02F16F1A7930045C2BF /* D2Utils */,
+				E804D27A16F1C95E0045C2BF /* Utils */,
 				E804CFF516F166770045C2BF /* D2UtilsDemo */,
 				E804CFEE16F166770045C2BF /* Frameworks */,
 				E804CFED16F166770045C2BF /* Products */,
@@ -122,33 +125,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E804D02F16F1A7930045C2BF /* D2Utils */ = {
+		E804D27A16F1C95E0045C2BF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E804D03016F1A7930045C2BF /* D2Base */,
-				E804D03216F1A7930045C2BF /* D2Helper */,
+				E804D28416F1C9E40045C2BF /* D2Base */,
+				E804D27D16F1C95E0045C2BF /* D2Helper */,
 			);
-			name = D2Utils;
-			path = ../D2Utils;
+			name = Utils;
+			path = ../Utils;
 			sourceTree = "<group>";
 		};
-		E804D03016F1A7930045C2BF /* D2Base */ = {
+		E804D27D16F1C95E0045C2BF /* D2Helper */ = {
 			isa = PBXGroup;
 			children = (
-				E804D03116F1A7930045C2BF /* D2Base.h */,
-			);
-			path = D2Base;
-			sourceTree = "<group>";
-		};
-		E804D03216F1A7930045C2BF /* D2Helper */ = {
-			isa = PBXGroup;
-			children = (
-				E804D03316F1A7930045C2BF /* NSArray+D2Helper.h */,
-				E804D03416F1A7930045C2BF /* NSArray+D2Helper.m */,
-				E804D03516F1A7930045C2BF /* NSDate+D2Helper.h */,
-				E804D03616F1A7930045C2BF /* NSDate+D2Helper.m */,
+				E804D27E16F1C95E0045C2BF /* NSArray+D2Helper.h */,
+				E804D27F16F1C95E0045C2BF /* NSArray+D2Helper.m */,
+				E804D28016F1C95E0045C2BF /* NSDate+D2Helper.h */,
+				E804D28116F1C95E0045C2BF /* NSDate+D2Helper.m */,
 			);
 			path = D2Helper;
+			sourceTree = "<group>";
+		};
+		E804D28416F1C9E40045C2BF /* D2Base */ = {
+			isa = PBXGroup;
+			children = (
+				E804D28816F1CA420045C2BF /* D2Base.h */,
+				E804D28916F1CA6F0045C2BF /* D2Util.h */,
+				E804D28A16F1CA6F0045C2BF /* D2Util.m */,
+			);
+			path = D2Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +227,9 @@
 				E804D00016F166770045C2BF /* AppDelegate.m in Sources */,
 				E804D01916F16D9F0045C2BF /* ViewController.m in Sources */,
 				E804D02E16F190650045C2BF /* TextViewController.m in Sources */,
-				E804D03716F1A7930045C2BF /* NSArray+D2Helper.m in Sources */,
-				E804D03816F1A7930045C2BF /* NSDate+D2Helper.m in Sources */,
+				E804D28216F1C95E0045C2BF /* NSArray+D2Helper.m in Sources */,
+				E804D28316F1C95E0045C2BF /* NSDate+D2Helper.m in Sources */,
+				E804D28B16F1CA6F0045C2BF /* D2Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

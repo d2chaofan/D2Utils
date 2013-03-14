@@ -1,16 +1,16 @@
 /*
  Copyright (c) 2013 Deng Chaofan. All rights reserved.
-
+ 
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
-
+ 
  * Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-
+ list of conditions and the following disclaimer.
+ 
  * Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ 
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -25,6 +25,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (D2Helper)
-- (id)objectAtIdx:(int)idx;     // get object at index
+@interface D2Util : NSObject
+// for string
++ (BOOL)isEmptyStr:(NSString *)string;
++ (BOOL)isNoEmptyStr:(NSString *)string;
++ (BOOL)isEmptyStrEx:(NSString *)string;
++ (BOOL)isNoEmptyStrEx:(NSString *)string;
++ (NSString *)trim:(NSString *)string;
 @end

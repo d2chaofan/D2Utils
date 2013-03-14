@@ -2,8 +2,8 @@
 //  ViewController.m
 //  D2UtilsDemo
 //
-//  Created by yunlian on 13-3-14.
-//  Copyright (c) 2013年 d2chaofan. All rights reserved.
+//  Created by Deng Chaofan on 13-3-14.
+//  Copyright (c) 2013 Deng Chaofan. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -11,10 +11,12 @@
 #import "D2Base.h"
 #import "NSArray+D2Helper.h"
 #import "NSDate+D2Helper.h"
+#import "D2Util.h"
 
 @interface ViewController (Private)
 - (NSString *)baseText;
 - (NSString *)helperText;
+- (NSString *)utilText;
 @end
 
 @implementation ViewController
@@ -24,7 +26,7 @@
     if (self) {
         self.title = @"D2UtilsDemo";
         // Custom initialization
-        _titles = [NSArray arrayWithObjects:@"Base", @"Helper", nil];
+        _titles = [NSArray arrayWithObjects:@"Base", @"Helper", @"D2Util", nil];
     }
     return self;
 }
@@ -52,6 +54,8 @@
         textViewController.text = [self baseText];
     } else if ( indexPath.row == 1 ) {
         textViewController.text = [self helperText];
+    } else if ( indexPath.row == 2 ) {
+        textViewController.text = [self utilText];
     }
     [self.navigationController pushViewController:textViewController animated:YES];
 }
@@ -86,6 +90,24 @@
     [str appendFormat:@"[date dateByAddingMonths:-1] = %@\n", [date dateByAddingMonths:-1]];
     [str appendFormat:@"[date dateByAddingYears:-1] = %@\n", [date dateByAddingYears:-1]];
     [str appendFormat:@"[date dateByAddingYears:1 months:2 days:3] = %@\n", [date dateByAddingYears:1 months:2 days:3]];
+    return str;
+}
+- (NSString *)utilText {
+    NSMutableString *str = [[NSMutableString alloc] init];
+    // array helper
+    NSString *baseStr = @"  123ABC  ";
+    [str appendFormat:@"baseStr = '%@'\n", baseStr];
+    [str appendFormat:@"[D2Util trim:baseStr] = '%@'\n", [D2Util trim:baseStr]];
+    [str appendFormat:@"[D2Util isEmptyStr:baseStr] = %d\n", [D2Util isEmptyStr:baseStr]];
+    [str appendFormat:@"[D2Util isEmptyStr:@\"\"] = %d\n", [D2Util isEmptyStr:@""]];
+    [str appendFormat:@"[D2Util isEmptyStr:nil] = %d\n", [D2Util isEmptyStr:nil]];
+    [str appendFormat:@"[D2Util isNoEmptyStr:baseStr] = %d\n", [D2Util isNoEmptyStr:baseStr]];
+    [str appendFormat:@"[D2Util isNoEmptyStr:@\"\"] = %d\n", [D2Util isNoEmptyStr:@""]];
+    [str appendFormat:@"[D2Util isNoEmptyStr:nil] = %d\n", [D2Util isNoEmptyStr:nil]];
+    [str appendFormat:@"[D2Util isEmptyStrEx:baseStr] = %d\n", [D2Util isEmptyStrEx:baseStr]];
+    [str appendFormat:@"[D2Util isEmptyStrEx:@\"  \"] = %d\n", [D2Util isEmptyStrEx:@"  "]];
+    [str appendFormat:@"[D2Util isNoEmptyStrEx:baseStr] = %d\n", [D2Util isNoEmptyStrEx:baseStr]];
+    [str appendFormat:@"[D2Util isNoEmptyStrEx:@\"  \"] = %d\n", [D2Util isNoEmptyStrEx:@"  "]];
     return str;
 }
 @end
